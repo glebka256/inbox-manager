@@ -1,0 +1,14 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\.gmail]
+@="Gmail.AI.Manager"
+
+[HKEY_CLASSES_ROOT\Gmail.AI.Manager]
+@="Gmail AI Manager"
+
+[HKEY_CLASSES_ROOT\Gmail.AI.Manager\shell]
+
+[HKEY_CLASSES_ROOT\Gmail.AI.Manager\shell\open]
+
+[HKEY_CLASSES_ROOT\Gmail.AI.Manager\shell\open\command]
+@="cmd.exe /c \"cd /d \"%1\\..\" && call gmail_ai_env\\Scripts\\activate.bat && python gmail_ai_gui.py\""

@@ -1,0 +1,205 @@
+# Inbox-Manager - Git Ignore File
+# This file tells Git which files NOT to include in the repository
+
+# ======================
+# SECURITY & CREDENTIALS
+# ======================
+# Never commit passwords or personal information!
+credentials/gmail_credentials.env
+*.env
+.env
+gmail_credentials.env
+app_passwords.txt
+secrets.json
+
+# ======================
+# DATABASES & DATA FILES
+# ======================
+# Don't commit user data or AI training data
+*.db
+*.sqlite
+*.sqlite3
+smart_learning.db
+email_data.db
+training_data.db
+user_data/
+email_cache/
+*.pkl
+*.joblib
+
+# ======================
+# PYTHON FILES
+# ======================
+# Python cache and compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# ======================
+# VIRTUAL ENVIRONMENTS
+# ======================
+# Python virtual environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+.env/
+
+# ======================
+# IDE & EDITOR FILES
+# ======================
+# Various code editors and IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ======================
+# LOGS & TEMPORARY FILES
+# ======================
+# Application logs and temporary files
+logs/
+*.log
+*.tmp
+*.temp
+debug.log
+error.log
+app.log
+temp/
+tmp/
+
+# ======================
+# SYSTEM FILES
+# ======================
+# Operating system files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ======================
+# BACKUP & ARCHIVE FILES
+# ======================
+# Backup files and archives
+*.bak
+*.backup
+*.old
+*.orig
+*.zip
+*.tar.gz
+*.rar
+backups/
+archives/
+
+# ======================
+# USER SPECIFIC FILES
+# ======================
+# Files that are specific to individual users
+user_settings.json
+personal_config.ini
+my_emails.csv
+email_export.xlsx
+screenshots/personal/
+test_data/
+
+# ======================
+# DEVELOPMENT & TESTING
+# ======================
+# Development and testing artifacts
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+test_results/
+test_output/
+
+# ======================
+# JUPYTER NOTEBOOKS
+# ======================
+# Jupyter notebook checkpoints
+.ipynb_checkpoints
+
+# ======================
+# DOCUMENTATION BUILD
+# ======================
+# Documentation build files
+docs/_build/
+docs/build/
+site/
+
+# ======================
+# PACKAGE MANAGERS
+# ======================
+# Package manager files
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ======================
+# CUSTOM IGNORE PATTERNS
+# ======================
+# Add your own patterns here
+
+# Large email exports
+email_exports/
+*.mbox
+*.eml
+
+# User screenshots (keep example screenshots)
+screenshots/user_*
+screenshots/personal/
+my_screenshots/
+
+# Configuration backups
+config_backup/
+settings_backup/
+
+# Performance test files
+performance_test/
+benchmark_results/
+
+# ======================
+# ALLOW THESE FILES
+# ======================
+# Make sure these important files are NOT ignored
+!requirements.txt
+!README.md
+!LICENSE
+!.gitignore
+!INSTALL_AND_RUN.bat
+!screenshots/example-*
+!credentials/gmail_credentials_template.env

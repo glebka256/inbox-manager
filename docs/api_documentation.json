@@ -1,0 +1,23 @@
+{
+  "title": "Gmail AI Mobile API",
+  "version": "2.0.0",
+  "description": "REST API for Gmail AI Manager mobile integration",
+  "base_url": "http://localhost:5000/api",
+  "endpoints": {
+    "GET /status": "Get system status",
+    "GET /dashboard": "Get dashboard summary",
+    "GET /analytics/daily": "Get daily analytics",
+    "GET /business/report": "Get business intelligence report",
+    "GET /business/overdue": "Get overdue items",
+    "GET /learning/stats": "Get learning statistics",
+    "POST /learning/feedback": "Submit learning feedback",
+    "POST /classify": "Classify email content",
+    "GET /automation/rules": "Get automation rules",
+    "POST /automation/rules": "Add automation rule",
+    "GET /automation/stats": "Get automation statistics",
+    "GET /categories": "Get available categories",
+    "POST /categories": "Add new category",
+    "GET /notifications": "Get notifications/alerts",
+    "GET /search": "Search processed emails"
+  }
+}

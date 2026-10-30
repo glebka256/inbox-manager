@@ -1,0 +1,222 @@
+{
+  "generated_at": "2025-09-24T04:08:45.358364",
+  "system_overview": {
+    "total_emails_processed": 3,
+    "uptime_hours": 0.0014459611111111111,
+    "configuration": {
+      "processing": {
+        "batch_size": 10,
+        "processing_interval": 300,
+        "max_emails_per_batch": 50
+      },
+      "features": {
+        "smart_learning": true,
+        "analytics": true,
+        "business_intelligence": true,
+        "automation": true,
+        "security_monitoring": true
+      },
+      "thresholds": {
+        "confidence_threshold": 0.7,
+        "security_risk_threshold": 50,
+        "auto_retrain_feedback_count": 15
+      },
+      "notifications": {
+        "high_risk_security": true,
+        "dot_compliance_issues": true,
+        "overdue_invoices": true,
+        "system_errors": true
+      },
+      "automation": {
+        "auto_label": true,
+        "auto_star_important": true,
+        "auto_archive_spam": true,
+        "create_tasks": true
+      },
+      "business_rules": {
+        "rate_confirmation_priority": "high",
+        "dot_compliance_escalation": true,
+        "invoice_tracking": true,
+        "linkedin_auto_archive": true
+      }
+    }
+  },
+  "analytics": {
+    "date": "2025-09-24",
+    "email_volume": [
+      {
+        "classification": "Important",
+        "count": 1,
+        "date": "2025-09-24"
+      },
+      {
+        "classification": "LinkedIn",
+        "count": 1,
+        "date": "2025-09-24"
+      },
+      {
+        "classification": "RateConfirmation",
+        "count": 1,
+        "date": "2025-09-24"
+      }
+    ],
+    "top_senders": [
+      {
+        "sender": "security@suspicious-bank.com",
+        "email_count": 1
+      },
+      {
+        "sender": "noreply@linkedin.com",
+        "email_count": 1
+      },
+      {
+        "sender": "dispatch@freightcompany.com",
+        "email_count": 1
+      }
+    ],
+    "classification_accuracy": [
+      {
+        "classification": "Important",
+        "avg_confidence": 0.37369669227403324,
+        "total_count": 1
+      },
+      {
+        "classification": "LinkedIn",
+        "avg_confidence": 0.7282275403933298,
+        "total_count": 1
+      },
+      {
+        "classification": "RateConfirmation",
+        "avg_confidence": 0.8820533554237766,
+        "total_count": 1
+      }
+    ],
+    "total_processed": 3
+  },
+  "business_intelligence": {
+    "rate_sheets": {
+      "total_loads": 1,
+      "total_revenue": 2500.0,
+      "avg_rate": 2500.0,
+      "avg_weight": 45000.0,
+      "top_brokers": {
+        "freightcompany.com": 1
+      },
+      "equipment_breakdown": {}
+    }
+  },
+  "smart_learning": {
+    "total_feedback": 0,
+    "correction_rate": 0,
+    "category_distribution": {},
+    "recent_feedback": 0,
+    "total_categories": 5
+  },
+  "automation": {
+    "rules": {
+      "total_rules": 4,
+      "total_executions": 2,
+      "avg_executions": 0.5
+    },
+    "recent_executions": {
+      "success": 2
+    },
+    "top_rules": [
+      {
+        "name": "High Priority Rate Confirmations",
+        "executions": 1
+      },
+      {
+        "name": "Auto-Archive LinkedIn",
+        "executions": 1
+      },
+      {
+        "name": "DOT Compliance Alerts",
+        "executions": 0
+      },
+      {
+        "name": "Overdue Invoice Reminders",
+        "executions": 0
+      }
+    ]
+  },
+  "security": {
+    "recent_alerts": [],
+    "alert_summary": {
+      "total": 0,
+      "critical": null,
+      "high": null,
+      "medium": null,
+      "unresolved": null
+    },
+    "compliance_checks": [
+      {
+        "name": "Data Retention Policy",
+        "status": "pending",
+        "last_check": "2025-09-24 04:08:40.144904"
+      },
+      {
+        "name": "PII Detection",
+        "status": "pending",
+        "last_check": "2025-09-24 04:08:40.144904"
+      },
+      {
+        "name": "Financial Data Security",
+        "status": "pending",
+        "last_check": "2025-09-24 04:08:40.144904"
+      },
+      {
+        "name": "DOT Hours of Service",
+        "status": "pending",
+        "last_check": "2025-09-24 04:08:40.143905"
+      }
+    ]
+  },
+  "health_check": {
+    "timestamp": "2025-09-24T04:08:45.358364",
+    "overall_status": "error",
+    "components": {
+      "smart_learning": {
+        "status": "healthy",
+        "total_feedback": 0,
+        "correction_rate": 0
+      },
+      "analytics": {
+        "status": "healthy",
+        "emails_processed": 3
+      },
+      "business_intelligence": {
+        "status": "healthy",
+        "rate_sheets": 6,
+        "invoices": 0
+      },
+      "automation": {
+        "status": "healthy",
+        "active_rules": 4,
+        "total_executions": 2
+      },
+      "security_monitoring": {
+        "status": "error",
+        "error": "'>' not supported between instances of 'NoneType' and 'int'"
+      }
+    },
+    "metrics": {
+      "total_emails_processed": 3,
+      "uptime_hours": 0.0014513444444444446,
+      "last_health_check": "2025-09-24 04:08:40.353771"
+    },
+    "recommendations": []
+  },
+  "business_insights": {
+    "processing_performance": {},
+    "peak_hours": {
+      "03:00": 2,
+      "02:00": 1
+    },
+    "priority_senders": []
+  },
+  "overdue_items": {
+    "overdue_invoices": [],
+    "overdue_compliance": []
+  }
+}
