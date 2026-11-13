@@ -1,0 +1,109 @@
+# ==========================================================
+# Gmail AI Manager (inbox-manager) — .gitignore
+# Якщо файл уже закомічено, .gitignore його не прибере:
+#   git rm --cached <файл>   (або  git rm -r --cached <каталог>)
+# ==========================================================
+
+# ----- Облікові дані та секрети (НІКОЛИ не комітити) -----
+.env
+.env.*
+*.env
+credentials/gmail_credentials.env
+credentials/*.encrypted
+gmail_credentials.env
+app_passwords.txt
+secrets.json
+*.pem
+*.key
+token.json
+client_secret*.json
+
+# Шаблон облікових даних залишається в репозиторії
+!credentials/gmail_credentials_template.env
+!.env.example
+
+# ----- Бази даних SQLite -----
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+*.db-wal
+*.db-shm
+
+# ----- Навчальні моделі -----
+*.pkl
+*.joblib
+smart_model.pkl
+
+# ----- Персональні та згенеровані дані -----
+# Навчальні дані містять реальні адреси відправників і теми листів
+data/email_training_data.csv
+data/email_training_data.json
+# Згенеровані звіти
+data/master_report_*.json
+data/final_report_*.json
+analytics_output/
+user_data/
+email_cache/
+test_data/
+
+# ----- Локальна конфігурація -----
+# Приклад конфігурації data/master_config.json залишається в репозиторії
+/master_config.json
+config/gmail_ai_config.json
+config/*.local.json
+
+# ----- Журнали -----
+logs/
+*.log
+
+# ----- Python -----
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+pip-log.txt
+
+# ----- Віртуальні середовища -----
+.venv/
+venv/
+env/
+ENV/
+gmail_ai_env/
+
+# ----- Тестування та покриття -----
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+.tox/
+.mypy_cache/
+.ruff_cache/
+
+# ----- Редактори та IDE -----
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ----- Операційні системи -----
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ----- Тимчасові та резервні файли -----
+*.tmp
+*.bak
+*.backup
+backups/
+
+# ----- Сміття з історії проєкту -----
+# Журнал pip, випадково збережений як файл
+archive/
